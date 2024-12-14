@@ -4,8 +4,6 @@ import (
 	"testing"
 )
 
-var useCase TaskUseCaseImpl = TaskUseCaseImpl{repo: NewTaskRepository("")}
-
 func Test_CreateTask_WhenDescriptionIsEmpty(t *testing.T) {
 	description := ""
 	_, err := useCase.CreateTask(description)
